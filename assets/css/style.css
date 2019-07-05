@@ -1,0 +1,63 @@
+h1 {
+background: orange;
+color: white;
+padding: 20px;
+float: left;
+font-size: 30px;
+margin: 10px;
+
+}
+
+#paragraph {
+
+clear: left;
+color: green;
+background: beige;
+float: left;
+padding: 20px;
+margin: 10px;
+
+}
+
+#generatednumber {
+
+    color: green;
+    background: beige;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#winslosses {
+
+    color: green;
+    background: beige;
+    float: right;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#score {
+
+    clear: left;
+    color: green;
+    background: beige;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#guessesnumber {
+
+    clear: left;
+    color: green;
+    background: beige;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+
+}
+
