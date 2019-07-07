@@ -34,20 +34,19 @@ margin: 10px;
     color: black;
     background: green;
     float: left;
-    padding: 10px 60px 60px 10px;
+    padding: 0.5% 40% 15% 0.5%;
     margin: 10px;
     font-size: 30px;
 
 }
 
-#winslosses {
+.container {
 
     color: black;
     background: lightblue;
     float: left;
-    padding: 20px;
+    padding: 0.5% 5% 10% 0.5%;
     margin: 10px;
-
 
 }
 
@@ -57,25 +56,24 @@ margin: 10px;
     color: white;
     background: teal;
     float: left;
-    padding: 20px;
-    margin: 10px;
+    padding: 3%;
+    width: 30%;
+    margin: 10px;  
 
 }
 
 #guessesnumber {
-
+    margin: 10px;
     clear: left;
     color: white;
     background: teal;
     float: left;
-    padding: 10px 60px 60px 10px;
-    margin: 10px;
+    padding: 3%;
+    width: 30%;
     font-size: 30px;
-
 }
 
-#crystal-image-1, #crystal-image-2,
-#crystal-image-3, #crystal-image-4 {
+.crystals {
 
 width: 100px;
 height: 100px;
