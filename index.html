@@ -6,31 +6,46 @@
 <Title>Crystal Game</Title>
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<script type= "text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
 <body>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type= "text/javascript" src="assets/javascript/game.js"></script>
+  
+  <h1>Crystals Collector!</h1>
+  
+  <p><span id="paragraph">You will be given a random number at the start of the game
+    <br>
+    <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+    <br>
+    <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+    <br>
+    <br> The value of each crystal is hidden from you until you click on it.
+    <br>
+    <br> Each time when the game starts, the game will change the value of each crystal
+  </span></p>
+  
+  <div class="clearfix">
+      <p><span id="generatednumber">generated number</span></p>
+  
+      <p> <span id="winslosses">wins: <br> losses:</span></p>
+      
+  </div>
 
-    <h1>Crystals Collector!</h1>
 
-    <p><span id="paragraph">You will be given a random number at the start of the game
-      <br>
-      <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-      <br>
-      <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
-      <br>
-      <br> The value of each crystal is hidden from you until you click on it.
-      <br>
-      <br> Each time when the game starts, the game will change the value of each crystal
-    </span></p>
-
-<p><span id="generatednumber">generated number</span></p>
-
-<p><span id="winslosses">wins: <br> losses: </span></p>
-
-<p><span id="score">Your total score is:</span></p>
-
-<p><span id="guessesnumber">guessed number</span></p>
+  <div class="crystals">
+  
+      <img id ="crystal-image-1" src="assets/images/cat1.jpg" alt="crystal 1">
+      <img id ="crystal-image-2" src="assets/images/cat2.jpg" alt="crystal 2">
+      <img id ="crystal-image-3" src="assets/images/cat3.jpg" alt="crystal 3">
+      <img id ="crystal-image-4" src="assets/images/cat4.jpg" alt="crystal 4">
+       
+  </div>
+  <p><span id="score">Your total score is:</span></p>
+  
+  <p><span id="guessesnumber">guessed number</span></p>
+  
 
 </body>
 

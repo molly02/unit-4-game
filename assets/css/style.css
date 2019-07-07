@@ -8,9 +8,13 @@ margin: 10px;
 
 }
 
+body{
+width: 50%;
+
+}
+
 #paragraph {
 
-clear: left;
 color: green;
 background: beige;
 float: left;
@@ -19,31 +23,39 @@ margin: 10px;
 
 }
 
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
 #generatednumber {
 
-    color: green;
-    background: beige;
+    color: black;
+    background: green;
     float: left;
-    padding: 20px;
+    padding: 10px 60px 60px 10px;
     margin: 10px;
+    font-size: 30px;
 
 }
 
 #winslosses {
 
-    color: green;
-    background: beige;
-    float: right;
+    color: black;
+    background: lightblue;
+    float: left;
     padding: 20px;
     margin: 10px;
+
 
 }
 
 #score {
 
     clear: left;
-    color: green;
-    background: beige;
+    color: white;
+    background: teal;
     float: left;
     padding: 20px;
     margin: 10px;
@@ -53,11 +65,19 @@ margin: 10px;
 #guessesnumber {
 
     clear: left;
-    color: green;
-    background: beige;
+    color: white;
+    background: teal;
     float: left;
-    padding: 20px;
+    padding: 10px 60px 60px 10px;
     margin: 10px;
+    font-size: 30px;
 
 }
 
+#crystal-image-1, #crystal-image-2,
+#crystal-image-3, #crystal-image-4 {
+
+width: 100px;
+height: 100px;
+
+}
