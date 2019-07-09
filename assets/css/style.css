@@ -5,22 +5,18 @@ padding: 20px;
 float: left;
 font-size: 30px;
 margin: 10px;
-
 }
 
 body{
 width: 50%;
-
 }
 
 #paragraph {
-
 color: green;
 background: beige;
 float: left;
 padding: 20px;
 margin: 10px;
-
 }
 
 .clearfix::after {
@@ -30,28 +26,23 @@ margin: 10px;
   }
 
 #generatednumber {
-
     color: black;
     background: green;
     float: left;
     padding: 0.5% 40% 15% 0.5%;
     margin: 10px;
     font-size: 30px;
-
 }
 
 .container {
-
     color: black;
     background: lightblue;
     float: left;
     padding: 0.5% 5% 10% 0.5%;
     margin: 10px;
-
 }
 
 #score {
-
     clear: left;
     color: white;
     background: teal;
@@ -74,8 +65,6 @@ margin: 10px;
 }
 
 .crystals {
-
 width: 100px;
 height: 100px;
-
 }
