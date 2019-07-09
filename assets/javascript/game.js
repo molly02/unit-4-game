@@ -16,19 +16,6 @@ function setupCats (){
     
 }
 
-var reset = function() {
-    counter = "0";
-    Crystal1 = setupCats();
-    Crystal2 = setupCats();
-    Crystal3 = setupCats();
-    Crystal4 = setupCats();
-    // repeat for all crystals, same as var. new generated number
-    // reset - targetNumber = 
-    //reset to zero??? not just start next number
-
-//new generated number
-//new numbers for each crystal
-}
 
 
 $("#generatednumber").text(targetNumber);
@@ -37,8 +24,10 @@ var Crystal1 = setupCats();
 var Crystal2 = setupCats();
 var Crystal3 = setupCats();
 var Crystal4 = setupCats();
-//var Crystal3 = increment;
-//var Crystal4 = increment;
+console.log(Crystal1);
+console.log(Crystal2);
+console.log(Crystal3);
+console.log(Crystal4);
 // how to get all crystals a diff random number?
 
 
@@ -54,40 +43,37 @@ $("#crystal-image-1").on("click", function (){
 })
 
 $("#crystal-image-2").on("click", function(){
-    counter +=Crystal2;
+    counter += Crystal2;
     $("#guessesnumber").text(counter);
     winslosses();
 })
 
 $("#crystal-image-3").on("click", function(){
-    counter +=Crystal3;
+    counter += Crystal3;
     $("#guessesnumber").text(counter);
     winslosses();
 })
 
 $("#crystal-image-4").on("click", function(){
-    counter +=Crystal4;
+    counter += Crystal4;
     $("#guessesnumber").text(counter);
     winslosses();
 })
 
-console.log(numberOptions);
-
 function winslosses (){
-
+    
     if (counter === targetNumber) {
         wins++;
         $("#wins").text("wins: " + wins);
         //  alert("winnning");
-        reset()
-        
+        reset();
     }
     
-    else if (counter >= targetNumber) {
+    else if (counter > targetNumber) {
         //alert("you lose");
         losses++;
         $("#losses").text("losses: " + losses);
-        reset()
+        reset();
     }
     //else {
         //   alert("looseee");
@@ -97,6 +83,20 @@ function winslosses (){
         
     }
     
+   function reset() {
+        counter = 0;
+        $("#guessesnumber").text(0); 
+        Crystal1 = setupCats();
+        Crystal2 = setupCats();
+        Crystal3 = setupCats();
+        Crystal4 = setupCats();
+        // repeat for all crystals, same as var. new generated number
+        // reset - targetNumber = 
+        //reset to zero??? not just start next number
+    
+    //new generated number
+    //new numbers for each crystal
+    }
     
 })
 
