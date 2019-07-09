@@ -5,17 +5,26 @@ var targetNumber = 20
 var counter = 0;
 var wins = 0;
 var losses = 0;
-var numberOptions = Math.round(Math.random()*11 + 1);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 //Math.round(Math.random()*11 + 1);
 //var increment = numberOptions[Math.round(Math.random())];
 
+function setupCats (){
+    var numberOptions = Math.round(Math.random()*11 + 1);
+    return numberOptions;
+    //return 
+    
+}
 
 var reset = function() {
-    counter = 0;
-    Crystal1 = numberOptions;
+    counter = "0";
+    Crystal1 = setupCats();
+    Crystal2 = setupCats();
+    Crystal3 = setupCats();
+    Crystal4 = setupCats();
     // repeat for all crystals, same as var. new generated number
     // reset - targetNumber = 
+    //reset to zero??? not just start next number
 
 //new generated number
 //new numbers for each crystal
@@ -24,8 +33,10 @@ var reset = function() {
 
 $("#generatednumber").text(targetNumber);
 
-var Crystal1 = numberOptions;
-var Crystal2 = numberOptions;
+var Crystal1 = setupCats();
+var Crystal2 = setupCats();
+var Crystal3 = setupCats();
+var Crystal4 = setupCats();
 //var Crystal3 = increment;
 //var Crystal4 = increment;
 // how to get all crystals a diff random number?
@@ -44,6 +55,18 @@ $("#crystal-image-1").on("click", function (){
 
 $("#crystal-image-2").on("click", function(){
     counter +=Crystal2;
+    $("#guessesnumber").text(counter);
+    winslosses();
+})
+
+$("#crystal-image-3").on("click", function(){
+    counter +=Crystal3;
+    $("#guessesnumber").text(counter);
+    winslosses();
+})
+
+$("#crystal-image-4").on("click", function(){
+    counter +=Crystal4;
     $("#guessesnumber").text(counter);
     winslosses();
 })
